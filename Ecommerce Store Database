@@ -1,0 +1,17 @@
+--create a store database.
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, sold INTEGER, price INTEGER);
+
+INSERT INTO store VALUES (1,"shirt", 40, 2, 20);
+INSERT INTO store VALUES (2, "hats", 52, 4, 25);
+INSERT INTO store VALUES (3, "mugs", 60, 6, 20);
+INSERT INTO store VALUES (4, "sweaters",15, 1, 40);
+INSERT INTO store VALUES (5, "socks", 80, 9, 11);
+
+--display the database ordered by price.
+SELECT * FROM store 
+ORDER BY price;
+
+--display the items that are less than $20.
+SELECT * FROM store WHERE price <=20;
+
